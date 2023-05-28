@@ -1,0 +1,24 @@
+Calculating the number of trainable parameters:
+How many trainable parameters does a feedforward network have with input shape (64,),
+three hidden layers with 16 units each and a final linear layer with 8 units?
+
+each layer move forward (feed-forward) into the other, multiply the next # of params by previous
+then for the bias, add all but the first layer's number of neurons together
+Neural network, input 64, 3 16 neuron layers, 8 neuron output:
+64
+16
+16
+16
+8
+64*16
+16*16
+16*16
+16*8
+16+16+16+8
+-----
+1720
+
+==================================
+
+
+
